@@ -84,24 +84,60 @@
 
 .main {
 	width: 	100%;
+	overflow: hidden;
 	display: flex;
 	background-color: #fff;
-	.main__wraper_left{
-		background-color: #fff;
+	.info-self{
+		box-sizing: border-box;
+		background-color: #efeee9;
 		overflow: hidden;
-		width: 50%
+		width: 50%;
+		padding: 0 80px 40px;
+		.info-self__avatar{
+			padding-bottom: 40px;
+		}
+		.info-self__description{
+			p{
+			padding: 10px 0;
+			}
+		}
 	}
 	.skills{
 		background-color: #eeebdf;
 		overflow: hidden;
 		width: 50%;
 		// padding: 0 20px
-		
 	}
+}
+.dashed-title{
+	width: 250px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.skills__description {
+	padding: 0 20px 40px 40px;
+}
+.content__skills{
+	.skills__title{
+		margin-left: 40px;
+	}
+}
+.skills__list {
+		display: flex;
+		overflow: hidden;
+		padding-left: 10px;
+		margin: 0; 
+		flex-wrap: wrap;
+	.skills__list_item{
+		padding: 20px 18px;
+		text-decoration: none;
+		list-style: none;
+	}	
 }
 
 .traingle {
 	position: relative;
   top: 4px;
-  fill: #fff;
+  fill: #efeee9;
 }

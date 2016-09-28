@@ -7,21 +7,14 @@
 //- mixin icon(name, mods)
 //-   - mods = mods || ''
 //-   svg(class="icon icon-" + name class=mods)
-//-     use(xlink:href="/assets/sprite/sprite.svg#" + name)
-mixin ul(className, title, items)
-		each item in title
-			h4 item
-				ul(class='${className}__list')
-					each it in items
-						li(class='${className}__list_item')
-							.skills__title
-							.skills__circle	
-								.skills__circle-content it
+//- //-     use(xlink:href="/assets/sprite/sprite.svg#" + name)
+//- mixin ul(className, title, items)
+//- 		each item in title
+//- 			h4 item
+//- 				ul(class='${className}__list')
+//- 					each it in items
+//- 						li(class='${className}__list_item')
+//- 							.skills__title
+//- 							.skills__circle	
+//- 								.skills__circle-content it
 
-ul.skills__list
-	li.skills__list_item
-		.skills__title
-			h4 Front-end
-		.skills__circle
-			img(src="/assets/img/gulp.png")
-		.skills__circle_content

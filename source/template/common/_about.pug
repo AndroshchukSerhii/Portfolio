@@ -21,36 +21,68 @@
 			polygon(points="0,0   0,86   500.8,86   500.8,75.5")
 			polygon(points="1000,00   1000,86   500,86   500,75.5",fill="#eeebdf")
 	main.main
-		.main__wraper_left
-			h1 Обо мне
-			.main__content_left
-				img(src="/assets/img/avatar.jpg")
-				h3 Кто я
-				p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать 		 |интересные и современные проекты. 
+		.info-self
+			.dashed-title
+				h1 Обо мне
+			.info-self__content
+				.info-self__avatar
+					img(src="/assets/img/avatar.jpg")
+				h3.dashed-title Кто я
+				.info-self__description
+					p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать 		 |интересные и современные проекты. 
 
-				p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!	
+					p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!	
 		.skills
-			h3.dashed-title Чем я могу быть вам полезен
+			.dashed-title
+				h3 Чем я могу быть вам полезен
 			p.skills__description 	
-				Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+				|Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
 			.content__skills
-				h4 Frontend
+				h4.skills__title Frontend
 				ul.skills__list
 					li.skills__list_item
-						.skills__title
-							h4 Front-end
 						.skills__circle
 							img(src="/assets/img/gulp.png")
-						.skills__circle_content		
-					li.skills__list_item		
-						.skills__title
-							h4 Front-end
-						.skills__circle		
-							img(src="/assets/img/gulp.png")		
 						.skills__circle_content
 					li.skills__list_item
-						.skills__title
-							h4 Front-end
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+					li.skills__list_item
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+			.content__skills
+				h4.skills__title Backend
+				ul.skills__list
+					li.skills__list_item
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+					li.skills__list_item
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+					li.skills__list_item
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+					li.skills__list_item
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+			.content__skills
+				h4.skills__title WorkFlow
+				ul.skills__list
+					li.skills__list_item
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+					li.skills__list_item
+						.skills__circle
+							img(src="/assets/img/gulp.png")
+						.skills__circle_content
+					li.skills__list_item
 						.skills__circle
 							img(src="/assets/img/gulp.png")
 						.skills__circle_content
