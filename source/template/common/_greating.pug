@@ -1,0 +1,53 @@
+.button_wrap 
+	a(href="#",class="button_log") Авторизоваться
+.welcome
+	.welcome__img_wrap
+		img(src="/assets/img/avatar.jpg", class="welcome__img_avatar")
+	.welcome__text_name 
+		h2 #{name}
+		p  Личный сайт веб разработчика
+	.welcome_link
+		ul.item_wrap-link
+			li
+				a(href="#",class="icon-github")
+					img(src="/assets/img/github.png")  
+			li
+				a(href="#",class="icon-github")
+					img(src="/assets/img/github.png") 
+			li
+				a(href="#",class="icon-github")
+					img(src="/assets/img/github.png") 
+	
+	ul.welcome__navigation
+		li
+			a(href="")  Мои работы
+		li
+			a(href="/about.html")  Обо мне
+		li
+			a(href="#") Блог
+.welcome.welcome_hidden
+	.welcome__title.block-dash 
+		h2 Авторизуйтесь
+	form.form__wraper
+		div.form__field
+			span.form__field_icon
+			=""
+			input(type="text",value="Логин")
+		div.form__field
+			span.form__field_icon
+			=""	
+			input(type="text",value="Пароль")
+		div.form__wraper-check
+			input(type="checkbox") 
+			| Я человек
+			p Вы точно не робот?
+			div.form__input_radio
+				input(type="radio",name="radio",value="yes")
+				= "Да"
+				input(type="radio",name="radio",value="no", checked)
+				= "Не уверен"	
+	ul.welcome__navigation
+		li
+			a(href="")  На главную
+		li
+			a(href="#")  Войти
