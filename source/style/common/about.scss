@@ -1,102 +1,21 @@
-.page__wrap{
-  min-height: 100%;
-
-}
-.header__wrap{
-	height: 90px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.cmn-toggle-switch {
-  display: flex;
-  position: relative;
-  // overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 71px;
-  height: 60px;
-  border-radius: 2px;
-  font-size: 0;
-  text-indent: -9999px;
-  background-color: rgba(0,0,0,0);
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-  &:focus {
- 	 outline: none;
-  }
-}
-
-.cmn-toggle-switch span {
-  display: block;
-  position: absolute;
-  top: 27px;
-  left: 18px;
-  right: 18px;
-  height: 5px;
-  background: white;
-}
-
-.cmn-toggle-switch span::before,
-.cmn-toggle-switch span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background-color: #fff;
-  content: "";
-}
-.cmn-toggle-switch span::before {
-  top: -10px;
-}
-.cmn-toggle-switch span::after {
-  bottom: -10px;
-}
-
-.welcome__text_white {
-   h2{
-      color: #fcfcfc;
-   }
-   p {
-      color: #d5dad2
-   }
-}
-
-
-.header__content{
-	max-height: 530px;
-	display: block;
-	position: relative;
-}
-.header__content_wrap{
-	box-sizing: border-box;
-	padding-top: 65px;
-	display: block;
-	width: 100%;
-	max-height: 410px;
-}
-
 .main {
 	width: 	100%;
-	overflow: hidden;
 	display: flex;
 	background-color: #fff;
 	.info-self{
 		box-sizing: border-box;
 		background-color: #efeee9;
-		overflow: hidden;
 		width: 50%;
 		padding: 0 80px 40px;
+		.info-self__content{
+			text-align: center;
+		}
 		.info-self__avatar{
 			padding-bottom: 40px;
 		}
 		.info-self__description{
+			text-align: left;
+
 			p{
 			padding: 10px 0;
 			}
@@ -125,7 +44,6 @@
 }
 .skills__list {
 		display: flex;
-		overflow: hidden;
 		padding-left: 10px;
 		margin: 0; 
 		flex-wrap: wrap;
@@ -134,6 +52,39 @@
 		text-decoration: none;
 		list-style: none;
 	}	
+}
+.maps{
+	background-image: url(/assets/img/maps.jpg);
+	height: 630px;
+	z-index: -1;
+	position: relative;
+	.maps__contacts{
+		text-align: left;
+	}
+	.maps__contacts_list{
+		list-style: none;
+		margin: 0;
+		padding-bottom: 40px;
+	
+		.maps__contacts_item{
+			span{
+				padding-right: 6px;
+			}
+			width: 100%;
+			display: flex;
+			align-items: center;
+			padding: 1px;
+		}
+	}
+}
+.page__wrap{
+ 	min-height: 100%;
+   margin-bottom: -150px;
+   &:after {
+  		content: '';
+  		display: block;
+  		//height: 150px; // Равно высоте футера
+	}
 }
 
 .traingle {

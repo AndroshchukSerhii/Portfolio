@@ -1,25 +1,5 @@
 .page__wrap
-	header.header__wrap
-		.header__item
-			ul.item_wrap-link
-				li
-					img(src="/assets/img/github.png")
-				li
-					img(src="/assets/img/github.png")
-				li
-					img(src="/assets/img/github.png")
-		button(class="cmn-toggle-switch cmn-toggle-switch__rot")
-			span
-	.header__content
-		.header__content_wrap
-			.welcome__img_wrap
-				img(src="/assets/img/avatar.jpg", class="welcome__img_avatar")
-			.welcome__text_name.welcome__text_white
-				h2 #{name}
-				p Личный сайт веб разработчика
-		svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
-			polygon(points="0,0   0,86   500.8,86   500.8,75.5")
-			polygon(points="1000,00   1000,86   500,86   500,75.5",fill="#eeebdf")
+	include ../common/header
 	main.main
 		.info-self
 			.dashed-title
@@ -86,3 +66,25 @@
 						.skills__circle
 							img(src="/assets/img/gulp.png")
 						.skills__circle_content
+	.maps
+		.welcome
+			.dashed-title
+				h3 Контакты
+			.maps__contacts
+				ul.maps__contacts_list
+					li.maps__contacts_item
+						span
+							+icon('skype')
+						| bapura96
+					li.maps__contacts_item
+						span
+							+icon('envelope2')
+						| androschykserg@gmail.com 
+					li.maps__contacts_item
+						span
+							+icon('phone')
+						| +38 063 612 07 15
+					li.maps__contacts_item
+						span
+							+icon('map_marker')
+						| Киев, ул. Янгеля 10

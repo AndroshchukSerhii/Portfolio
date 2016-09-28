@@ -1,7 +1,10 @@
-.button_wrap{
+body {
+    background: url('/assets/img/mountains_1200.jpg') no-repeat;
+    background-size: 100%;
+}
+.button_wrap {
     display: flex;
     box-sizing: border-box;
-    width: 1200px;
     justify-content: flex-end;
     padding: 20px; 
 }
@@ -17,9 +20,9 @@
     border-radius: 4px;
     transition: all 0.3s linear;
     
-    &:hover{
-    background: #fff;
-    color: #00bfa5;
+    &:hover {
+      background: #fff;
+      color: #00bfa5;
     }
 }
 .welcome_hidden{
@@ -36,7 +39,6 @@
    transform: translate(-50%, -50%);
    background-color: rgba(252,252,252, 0.85);
    border-radius: 4px;
-  
   .welcome__title{
      min-width: 70%
   }
@@ -58,13 +60,12 @@
     text-align: center;
     padding-top: 20px;
     width: 100%;
-
     p{
       padding-top: 10px;
     }
 }
 
-.item_wrap-link{
+.icon__wrap-link{
   list-style: none;
   height: 100px;
   margin: 0;
@@ -76,6 +77,14 @@
   li{
     margin: 0 14px;
   }
+  .icon__wrap-blue{
+    .icon-vk,.icon-github,.icon-in{
+      fill: #73d4c8;
+    }
+    .icon-vk:hover,.icon-github:hover,.icon-in:hover{
+      fill: #00bfa5;
+    }
+  }
 }
 
 
@@ -83,7 +92,7 @@
   list-style: none;
   margin: 0;
   padding: 0; 
-  background-color: rgba(10,177,159,1);
+  background-color: rgba(9,187,167,0.8);
   border-radius: 0 0 4px 4px;
   display: flex;
   justify-content: center;
@@ -92,9 +101,13 @@
   li{
     flex-grow: 1;
     text-decoration: none;
+    border-right: 1px solid #73cac2;
+    &:last-child{
+      border-right: none;
+    }
   }
   a{
-    height: 45px;
+    padding: 15px 0;
     display: flex;
     color: white;
     justify-content: center;
@@ -102,7 +115,7 @@
     transition: all 0.2s linear;
 
     &:hover{
-      background-color: rgba(0,150,136,0.85)
+      background-color: rgba(0,150,136,0.5)
     }
   }
 }
@@ -122,32 +135,6 @@
 
   }
 }
-// .block-dash:before {  
-//     content: "-";  
-//     font-size: 35pt;    
-//     color: #888;  
-//     float: left;  
-//     position: relative;  
-//     top: 0px;   
-  
-//     /** define it as a block element **/  
-//     display: block;  
-//     height: 100%;  
-//     width: 25px;  
-// }  
-// .block-dash:after {  
-//     content: "-";  
-//     font-size: 35pt;    
-//     color: #888;  
-//     float: right;  
-//     position: relative;  
-//     bottom: 30px;  
-  
-//     /** define it as a block element **/  
-//     display: block;  
-//     height: 100%;  
-//     width: 25px;  
-// }  
 .form__field{
   display: flex;
   flex: row nowrap;

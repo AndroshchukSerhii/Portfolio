@@ -1,0 +1,40 @@
+.page__wrap{
+  min-height: 100%;
+  // background: url('/assets/img/mountains_1200.jpg') no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+}
+.header__wrap{
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__item{
+	margin: 0 30px;
+}
+
+.welcome__text_white {
+   h2{
+      color: #fcfcfc;
+   }
+   p {
+      color: #d5dad2
+   }
+}
+
+
+.header__content{
+	max-height: 530px;
+	display: block;
+	position: relative;
+}
+.header__content_wrap{
+	box-sizing: border-box;
+	padding-top: 65px;
+	display: block;
+	width: 500px;
+	margin: auto;
+	max-height: 410px;
+}

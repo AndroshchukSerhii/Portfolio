@@ -7,16 +7,16 @@
 		h2 #{name}
 		p  Личный сайт веб разработчика
 	.welcome_link
-		ul.item_wrap-link
-			li
-				a(href="#",class="icon-github")
-					img(src="/assets/img/github.png")  
-			li
-				a(href="#",class="icon-github")
-					img(src="/assets/img/github.png") 
-			li
-				a(href="#",class="icon-github")
-					img(src="/assets/img/github.png") 
+		ul.icon__wrap-link
+			li.icon__wrap-item.icon__wrap-blue
+				a(href="#")
+					+icon('vk')
+			li.icon__wrap-item.icon__wrap-blue
+				a(href="#")
+					+icon('github') 
+			li.icon__wrap-item.icon__wrap-blue
+				a(href="#")
+					+icon('in')  
 	
 	ul.welcome__navigation
 		li
