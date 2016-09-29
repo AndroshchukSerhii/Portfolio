@@ -2,7 +2,7 @@
 	width: 	100%;
 	display: flex;
 	background-color: #fff;
-	.info-self{
+	.info-self {
 		box-sizing: border-box;
 		background-color: #efeee9;
 		width: 50%;
@@ -19,6 +19,9 @@
 			p{
 			padding: 10px 0;
 			}
+		}
+		.dashed-title{
+			width: 500px;
 		}
 	}
 	.skills{
@@ -88,7 +91,7 @@
 }
 
 .traingle {
-	position: relative;
+position: relative;
   top: 4px;
-  fill: #faf8f0
+  fill: #faf8f0;
 }

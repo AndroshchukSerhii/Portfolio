@@ -113,3 +113,90 @@
 	left: 0px;
 	background: #26bbaa;
 }
+
+.about-me{
+	background: url('/assets/img/bg_about.png') no-repeat;
+	background-size: cover;
+	background-position: 0 -100px;
+	text-align: center;
+	padding: 70px 0 0;
+	.works_title{
+		padding-bottom: 20px;
+		margin: 	0 auto;
+		width: 450px;
+	}
+}
+
+.comments__wrap{
+	display: flex;
+	justify-content: 	center;
+	.comments__group{
+		background: url('/assets/img/bracked.png') no-repeat;
+		text-align: left;
+		flex-grow: 1;
+		margin: 50px 10px 0;
+		padding: 60px 0 70px;
+		max-width: 400px;
+
+	}
+	.comments__group_descr{
+		line-height: 1.5;
+
+		}
+		.comments__group_img{
+			display: block;
+			padding: 30px 20px 0 0;
+			width: 80px;
+			height: 80px;
+			float: left;
+			img{
+				width: 100%;
+				height: 	100%;
+				border-radius: 50%;
+			}
+		}
+		.comments__group_name{
+			padding: 50px 0 0 0;
+
+		}
+	.comments__group_person	{
+		display: flex;
+	}
+}
+.feadback{
+	width: 380px;
+	margin: auto auto;
+   text-align: center;
+   background-color: rgba(252,252,252, 0.7);
+   border-radius: 4px;
+   padding-top: 37px 0;
+   .feadback__form{
+   	padding-top: 30px;
+   }
+   .feadback__label_input{
+   	box-sizing: border-box;
+   	height: 40px;
+   	border: none;
+   	line-height: 40px;
+   	padding: 0 10px;
+   	width: 90%;
+   	margin: 10px;
+   	border-radius: 4px;
+   }
+   .feadback__textarea{
+   	box-sizing: border-box;
+   	height: 140px;
+   	border: none;
+   	padding: 10px;
+   	width: 90%;
+   	margin: 10px 0;
+   	border-radius: 4px;
+   	resize: none;
+   }
+}
+.about-me__icon_up{
+	padding: 70px 0 60px;
+	.icon-portf_arrow_up,.icon-portf_arrow_down{
+		fill: rgba(255,255,255, 0.5);
+	}
+}
