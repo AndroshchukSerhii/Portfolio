@@ -23,13 +23,21 @@
       color: #d5dad2
    }
 }
-
-
-.header__content{
-	max-height: 530px;
-	display: block;
-	position: relative;
+.page__about_wrap{
+	.polygon__triangle_right{
+		fill: #eeebdf;
+	}
+	.polygon__triangle_left{
+		fill: #efeee9
+	}
 }
+.page__about_wrap,.page__about_wrap{
+	.header__content{
+		max-height: 530px;
+		display: block;
+		position: relative;
+	}
+}	
 .header__content_wrap{
 	box-sizing: border-box;
 	padding-top: 65px;
