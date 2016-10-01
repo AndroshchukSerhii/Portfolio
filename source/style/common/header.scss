@@ -1,48 +1,57 @@
 .page__wrap{
   min-height: 100%;
-  // background: url('/assets/img/mountains_1200.jpg') no-repeat;
   background-size: 100% 100%;
   background-position: top center;
-
 }
-.header__wrap{
+.header__wrap {
 	height: 90px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.header__item{
+.header__item {
 	margin: 0 30px;
 }
-
 .welcome__text_white {
-   h2{
+   h2 {
       color: #fcfcfc;
    }
    p {
+		// font-family: 'robotolight', sans-serif;
       color: #d5dad2
    }
 }
-.page__about_wrap{
-	.polygon__triangle_right{
+.page__about_wrap {
+	.polygon__triangle_right {
 		fill: #eeebdf;
 	}
-	.polygon__triangle_left{
+	.polygon__triangle_left {
 		fill: #efeee9
 	}
 }
-.page__about_wrap,.page__about_wrap{
-	.header__content{
+.page__about_wrap,.page__about_wrap {
+	.header__content {
 		max-height: 530px;
 		display: block;
 		position: relative;
 	}
 }	
-.header__content_wrap{
+.header__content_wrap {
 	box-sizing: border-box;
 	padding-top: 65px;
 	display: block;
 	width: 500px;
 	margin: auto;
 	max-height: 410px;
+}
+.header__icon_down {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	.icon-portf_arrow_down{
+		fill: rgba(255,255,255,0.5);
+		&:hover{
+			fill: rgba(255,255,255,1);
+		}
+	}
 }

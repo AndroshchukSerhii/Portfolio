@@ -1,69 +1,69 @@
-.works__wrap_title{
+.works__wrap_title {
 	width: 100%;
 	display: flex;
 	background-color: #faf8f0;
 	justify-content: center;
 	align-items: center;
 	padding: 35px 0 70px 0;
-	.works_title{
+	.works_title {
 		display: flex;
 		width: 500px;
 		justify-content: center;
 	}
 }
-.slider{
+.slider {
 	position: relative;
 	display: flex;
 	padding: 50px 50px 0;
 	background-color: #efebe0;
-	.slider__left{
+	.slider__left {
 		width: 50%;
 		padding: 50px 50px 0 50px; 
 	}
-	.slider__right{
+	.slider__right {
 		display: flex;
 		width: 50%;
 		justify-content: center;
 		align-items: center;
 		padding: 50px;
 	}
-	.slider__content{
+	.slider__content {
 		max-width: 420px;
-		.slider__content_title{
+		.slider__content_title {
 			padding: 20px 0;
 		}
-		.slider__content_descr{
+		.slider__content_descr {
 			text-style: uppercase;
 			padding: 10px 0;
 			border-bottom: 1px solid #20b5a1;
 			border-top: 1px solid #20b5a1;
-			p{
+			p {
 				color: #20b5a1;
 				line-height: 1.5rem;
 			}
 		}
-		.slider__botton{
+		.slider__botton {
 			margin: 20px 0;
 			font-weight: bold;
 			display: flex;
-			.slider__botton_icon{
+			.slider__botton_icon {
 				display: flex;
 				background-color: #00bfa5;
 				border-radius: 4px;
 				align-items: center;
 				padding: 13px;
-				&:hover{
+				&:hover {
 					background-color: rgb(0,150,136);
    		 }
 			}
-			span{
+			span {
 				padding-left: 10px;
 				color: #fff;	
 			}
 		}
 	}
 }
-.slider__arrows span{
+.slider__arrows span {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -74,13 +74,13 @@
 	z-index: 2000;
 	transition: opacity 0.4s ease-in-out-out 0.2s;
 }
-.slider__arrows span.slider__arrows-prev{
+.slider__arrows span.slider__arrows-prev {
 	left: 30px;
 }
-.slider__arrows span.slider__arrows-next{
+.slider__arrows span.slider__arrows-next {
 	right: 30px;
 }
-.slider__dots{
+.slider__dots {
 	width: 100%;
 	position: absolute;
 	text-align: center;
@@ -89,7 +89,7 @@
 	z-index: 2000;
 	user-select: none;
 }
-.slider__dots span{
+.slider__dots span {
 	display: inline-block;
 	box-sizing: border-box;
 	position: relative;
@@ -104,7 +104,7 @@
 		1px 1px 1px rgba(0,0,0,0.1) inset, 
 		1px 1px 1px rgba(255,255,255,0.1);
 }
-.slider__dots span.slider__dots_current:after{
+.slider__dots span.slider__dots_current:after {
 	content: '';
 	width: 9px;
 	height: 9px;
@@ -113,67 +113,62 @@
 	left: 0px;
 	background: #26bbaa;
 }
-
-.about-me{
+.about-me {
 	background: url('/assets/img/bg_about.png') no-repeat;
 	background-size: cover;
 	background-position: 0 -100px;
 	text-align: center;
 	padding: 70px 0 0;
-	.works_title{
+	.works_title {
 		padding-bottom: 20px;
-		margin: 	0 auto;
+		margin: 0 auto;
 		width: 450px;
 	}
 }
-
-.comments__wrap{
+.comments__wrap {
 	display: flex;
 	justify-content: 	center;
-	.comments__group{
+	.comments__group {
 		background: url('/assets/img/bracked.png') no-repeat;
 		text-align: left;
 		flex-grow: 1;
 		margin: 50px 10px 0;
 		padding: 60px 0 70px;
 		max-width: 400px;
-
 	}
-	.comments__group_descr{
+	.comments__group_descr {
 		line-height: 1.5;
-
-		}
-		.comments__group_img{
+	}
+		.comments__group_img {
 			display: block;
 			padding: 30px 20px 0 0;
 			width: 80px;
 			height: 80px;
 			float: left;
-			img{
+			img {
 				width: 100%;
 				height: 	100%;
 				border-radius: 50%;
 			}
 		}
-		.comments__group_name{
+		.comments__group_name {
 			padding: 50px 0 0 0;
-
 		}
 	.comments__group_person	{
 		display: flex;
 	}
 }
-.feadback{
+.feadback {
 	width: 380px;
 	margin: auto auto;
    text-align: center;
    background-color: rgba(252,252,252, 0.7);
    border-radius: 4px;
    padding-top: 37px 0;
-   .feadback__form{
+   .feadback__form {
    	padding-top: 30px;
    }
-   .feadback__label_input{
+   .feadback__label_input {
    	box-sizing: border-box;
    	height: 40px;
    	border: none;
@@ -183,7 +178,7 @@
    	margin: 10px;
    	border-radius: 4px;
    }
-   .feadback__textarea{
+   .feadback__textarea {
    	box-sizing: border-box;
    	height: 140px;
    	border: none;
@@ -193,10 +188,16 @@
    	border-radius: 4px;
    	resize: none;
    }
+   .welcome__navigation_item-reset {
+   	background-color: #268c8b;
+   }
 }
-.about-me__icon_up{
+.about-me__icon_up {
 	padding: 70px 0 60px;
-	.icon-portf_arrow_up,.icon-portf_arrow_down{
+	.icon-portf_arrow_up,.icon-portf_arrow_down {
 		fill: rgba(255,255,255, 0.5);
+		&:hover{
+			fill: rgba(255,255,255,1)
+		}
 	}
 }

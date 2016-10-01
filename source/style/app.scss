@@ -6,54 +6,54 @@ body,html {
   background-size: 100% 100%;
   height: 100%;
 }
-
-a{
+a {
+  font-family: 'robotomedium', sans-serif;
 	text-decoration: none;
 	color: #fff;
 }
-
 h1,h2,h3,h4,h5,h6,p,span {
 	margin: 0;
 	padding: 0;
 	color: #455a64;
 }
-h1,h2,h3{
-  text-transform: uppercase;
+h1,h2,h3 {
+  font-family: 'barnierRR',sans-serif;
+  // text-transform: uppercase;
 }
-h1{
+h1 {
 	font-size: 63px;
 }
-h2{
+h2 {
 	font-size: 35px;
 }
-
 .icon {
   width: 25px;
   height: 25px;
   fill: rgba(255,255,255, 0.5);
-  &-hamburger,&-link{
+  &-hamburger,&-link {
     fill: #fff;
   }  
   &-skype, &-phone, &-envelope2, &-map_marker,&-portf_arrow_up,&-portf_arrow_down{
     fill: #00bea4;
   }
-  &-vk{
+  &-vk {
     width: 27px;
   }
-  &-vk_round,&-github_round,&-in_round{
+  &-vk_round,&-github_round,&-in_round {
     width: 35px;
     height: 35px;
   }
-  &-github{
+  &-github {
     width: 26px;
-    }  
-  &-github:hover,&-vk:hover,&-in:hover,&-vk_round:hover,&-github_round:hover,&-in_round:hover{
+  }  
+  &-github:hover,&-vk:hover,&-in:hover,&-vk_round:hover,&-github_round:hover,&-in_round:hover {
     fill: #fff;
   }
-
 }
 @import 'common/header';
 @import 'common/greating';
 @import 'common/about';
 @import 'common/works';
+@import 'common/blog';
 @import 'common/footer';
+@import 'common/fonts';

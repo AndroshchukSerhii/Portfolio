@@ -7,31 +7,29 @@
 		background-color: #efeee9;
 		width: 50%;
 		padding: 0 80px 40px;
-		.info-self__content{
+		.info-self__content {
 			text-align: center;
 		}
-		.info-self__avatar{
+		.info-self__avatar {
 			padding-bottom: 40px;
 		}
-		.info-self__description{
+		.info-self__description {
 			text-align: left;
-
-			p{
-			padding: 10px 0;
+			p {
+				padding: 10px 0;
 			}
 		}
-		.dashed-title{
+		.dashed-title {
 			width: 500px;
 		}
 	}
-	.skills{
+	.skills {
 		background-color: #eeebdf;
 		overflow: hidden;
 		width: 50%;
-		// padding: 0 20px
 	}
 }
-.dashed-title{
+.dashed-title {
 	width: 250px;
 	margin: 0 auto;
 	text-align: center;
@@ -40,8 +38,8 @@
 .skills__description {
 	padding: 0 20px 40px 40px;
 }
-.content__skills{
-	.skills__title{
+.content__skills {
+	.skills__title {
 		margin-left: 40px;
 	}
 }
@@ -50,27 +48,26 @@
 		padding-left: 10px;
 		margin: 0; 
 		flex-wrap: wrap;
-	.skills__list_item{
+	.skills__list_item {
 		padding: 20px 18px;
 		text-decoration: none;
 		list-style: none;
 	}	
 }
-.maps{
+.maps {
 	background-image: url(/assets/img/maps.jpg);
 	height: 630px;
 	z-index: -1;
 	position: relative;
-	.maps__contacts{
+	.maps__contacts {
 		text-align: left;
 	}
-	.maps__contacts_list{
+	.maps__contacts_list {
 		list-style: none;
 		margin: 0;
 		padding-bottom: 40px;
-	
-		.maps__contacts_item{
-			span{
+		.maps__contacts_item {
+			span {
 				padding-right: 6px;
 			}
 			width: 100%;
@@ -80,16 +77,14 @@
 		}
 	}
 }
-.page__about_wrap{
+.page__about_wrap {
  	min-height: 100%;
    margin-bottom: -150px;
    &:after {
   		content: '';
   		display: block;
-  		//height: 150px; // Равно высоте футера
 	}
 }
-
 .traingle {
 position: relative;
   top: 4px;

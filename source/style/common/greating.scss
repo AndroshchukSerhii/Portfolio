@@ -8,7 +8,6 @@ body {
     justify-content: flex-end;
     padding: 20px; 
 }
-
 .button_log {
     display: flex;
     justify-content: center;
@@ -19,17 +18,15 @@ body {
     border: 1px solid #fff;
     border-radius: 4px;
     transition: all 0.3s linear;
-    
     &:hover {
       background: #fff;
       color: #00bfa5;
     }
 }
-.welcome_hidden{
+.welcome_hidden {
     display: none;
 }
 .welcome{
-
    width: 380px;
    position: absolute;
    top: 50%;
@@ -39,33 +36,30 @@ body {
    transform: translate(-50%, -50%);
    background-color: rgba(252,252,252, 0.85);
    border-radius: 4px;
-  .welcome__title{
+  .welcome__title {
      min-width: 70%
   }
 }
-.welcome__img_wrap{
+.welcome__img_wrap {
     width: 145px;
     height: 145px;
     margin: 0 auto;
-    }
-
+}
 .welcome__img_avatar {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
     overflow: hidden;
-    }  
-
-.welcome__text_name{
+}  
+.welcome__text_name {
     text-align: center;
     padding-top: 20px;
     width: 100%;
-    p{
+    p {
       padding-top: 10px;
     }
 }
-
-.icon__wrap-link{
+.icon__wrap-link {
   list-style: none;
   height: 100px;
   margin: 0;
@@ -74,21 +68,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  li{
+  li {
     margin: 0 14px;
   }
-  .icon__wrap-blue{
-    .icon-vk,.icon-github,.icon-in{
+  .icon__wrap-blue {
+    .icon-vk,.icon-github,.icon-in {
       fill: #73d4c8;
     }
-    .icon-vk:hover,.icon-github:hover,.icon-in:hover{
+    .icon-vk:hover,.icon-github:hover,.icon-in:hover {
       fill: #00bfa5;
     }
   }
 }
-
-
-.welcome__navigation{
+.welcome__navigation {
   list-style: none;
   margin: 0;
   padding: 0; 
@@ -97,61 +89,55 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
-  li{
+  li {
     flex-grow: 1;
     text-decoration: none;
     border-right: 1px solid #73cac2;
-    &:last-child{
+    &:last-child {
       border-right: none;
     }
   }
-  a{
+  a {
     padding: 15px 0;
     display: flex;
     color: white;
     justify-content: center;
     transition: all 0.2s linear;
-
-    &:hover{
+    &:hover {
       background-color: rgba(0,150,136,0.5)
     }
   }
 }
-
-
-.form__wraper{
+.form__wraper {
   padding: 30px 20px 0;
   color: #7b888f;
-   p{
+   p {
     padding-top: 20px; 
   }
-  .form__wraper-check{
+  .form__wraper-check {
     padding: 10px 0 40px;
   }
-  .form__input_radio{
+  .form__input_radio {
     padding-top: 10px;
-
   }
 }
-.form__field{
+.form__field {
   display: flex;
   flex: row nowrap;
   width: 100%;
   padding: 10px 0; 
   border-color: #f0efe9;
-  input{
+  input {
     width: 295px;
     height: 45px;
     border: 0;
     padding: 0;
     border-radius: 0 4px 4px 0;
   }
-  .form__field_icon{
+  .form__field_icon {
     width: 45px;
     height: 45px;
     background-color: #f0efe9;
     border-radius: 4px 0 0 4px;
   }
 }
-
