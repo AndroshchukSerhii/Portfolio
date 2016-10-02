@@ -2,13 +2,13 @@ body {
     background: url('/assets/img/mountains_1200.jpg') no-repeat;
     background-size: 100%;
 }
-.button_wrap {
+.button__wrap {
     display: flex;
     box-sizing: border-box;
     justify-content: flex-end;
     padding: 20px; 
 }
-.button_log {
+.button__log {
     display: flex;
     justify-content: center;
     align-items: center;

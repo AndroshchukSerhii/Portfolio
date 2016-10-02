@@ -6,6 +6,7 @@
 	align-items: center;
 	padding: 35px 0 70px 0;
 	.works_title {
+		position: relative;
 		display: flex;
 		width: 500px;
 		justify-content: center;
@@ -120,6 +121,7 @@
 	text-align: center;
 	padding: 70px 0 0;
 	.works_title {
+		position: relative;
 		padding-bottom: 20px;
 		margin: 0 auto;
 		width: 450px;
@@ -191,6 +193,15 @@
    .welcome__navigation_item-reset {
    	background-color: #268c8b;
    }
+}
+.icon-works_header,.icon-about_header {
+	position: absolute;
+	fill: rgba(109,112,112,0.1);
+	width: inherit;
+	height: inherit;
+	left: -50%;
+	top: 25%;
+	transform: translate(50%, -50%);
 }
 .about-me__icon_up {
 	padding: 70px 0 60px;

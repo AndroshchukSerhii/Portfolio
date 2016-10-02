@@ -2,14 +2,19 @@ header.header__wrap
 	.header__item
 		ul.icon__wrap-link
 			li
-				+icon('vk')
+				a(href="#")
+					+icon('vk')
 			li
-				+icon('github')
+				a(href="#")
+					+icon('github')
 			li
-				+icon('in')
+				a(href="#")
+					+icon('in')
 	.header__item
-		+icon('hamburger')
+		span
+			+icon('hamburger')
 .header__content
+	+icon #{header}
 	.header__content_wrap
 		.welcome__img_wrap
 			img(src="/assets/img/avatar.jpg", class="welcome__img_avatar")
