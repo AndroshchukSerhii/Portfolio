@@ -1,7 +1,7 @@
 .page__wrap
 	include ../common/header
-	.works__wrap_title
-		.works_title
+	.works__wrap-title
+		.works__title
 			+icon("works_header")
 			h1 Мои Работы
 	.slider
@@ -9,59 +9,59 @@
 			img(src="/assets/img/work-4.png")
 		.slider__right
 			.slider__content
-				h2.slider__content_title Сайт школы онлайн Образования
-				.slider__content_descr
+				h2.slider__title Сайт школы онлайн Образования
+				.slider__descr
 					p  HTML , CSS, JAVASCRIPT HTML
-				.slider__botton
-					a(href="#").slider__botton_icon
+				.slider__button
+					a(href="#").slider__botton-icon
 						+icon('link')
-						span.slider__botton_descr Посмотреть сайт
+						span.slider__botton-descr Посмотреть сайт
 		nav.slider__arrows
 			span.slider__arrows-prev
 				+icon('portf_arrow_down')
 			span.slider__arrows-next
 				+icon('portf_arrow_up')
 		nav.slider__dots
+			span.slider__dots-current
 			span
-			span.slider__dots_current
 			span
 			span
 	.about-me
-		.works_title
+		.works__title
 			+icon("about_header")
 			h1 Что обо мне говорят
 		.comments__wrap
 			.comments__group
-				.comments__group_descr
+				.comments__description
 					p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-				.comments__group_person
-						.comments__group_img
+				.comments__group-person
+						.comments__group-img
 							img(src="/assets/img/DimaK.jpg")
-						.comments__group_name
+						.comments__group-name
 							h4 Ковальчук Дмитрий
 							p основатель Loftschool
 			.comments__group
-				.comments__group_descr
+				.comments__description
 					p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-				.comments__group_person
-						.comments__group_img
+				.comments__group-person
+						.comments__group-img
 							img(src="/assets/img/DimaK.jpg")
-						.comments__group_name
+						.comments__group-name
 							h4 Ковальчук Дмитрий
 							p основатель Loftschool
 		.feadback
 			h2 Связаться со мной
 			form.feadback__form
 				label.feadback__label
-					input(class="feadback__label_input")
+					input(class="feadback__input")
 				label.feadback__label
-					input(class="feadback__label_input")
+					input(class="feadback__input")
 				label.feadback__label
 					textarea.feadback__textarea
 			ul.welcome__navigation
 				li
 					a(href="/#")  Отправить
-				li.welcome__navigation_item-reset
+				li.welcome__button-reset
 					a(href="#")  Очистить
-		.about-me__icon_up
+		.about-me__icon-up
 			+icon('portf_arrow_up')

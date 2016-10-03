@@ -1,68 +1,68 @@
-.works__wrap_title {
+.works__wrap-title {
 	width: 100%;
 	display: flex;
 	background-color: #faf8f0;
 	justify-content: center;
 	align-items: center;
 	padding: 35px 0 70px 0;
-	.works_title {
-		position: relative;
-		display: flex;
-		width: 500px;
-		justify-content: center;
-	}
+}
+.works__title {
+	position: relative;
+	display: flex;
+	width: 500px;
+	justify-content: center;
 }
 .slider {
 	position: relative;
 	display: flex;
 	padding: 50px 50px 0;
 	background-color: #efebe0;
-	.slider__left {
-		width: 50%;
-		padding: 50px 50px 0 50px; 
+}
+.slider__left {
+	width: 50%;
+	padding: 50px 50px 0 50px; 
+}
+.slider__right {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+.slider__content {
+	max-width: 420px;
+}
+.slider__title {
+	padding: 20px 0;
+}
+.slider__descr {
+	text-style: uppercase;
+	padding: 10px 0;
+	border-bottom: 1px solid #20b5a1;
+	border-top: 1px solid #20b5a1;
+	p {
+		color: #20b5a1;
+		line-height: 1.5rem;
 	}
-	.slider__right {
-		display: flex;
-		width: 50%;
-		justify-content: center;
-		align-items: center;
-		padding: 50px;
+}
+.slider__button {
+	margin: 20px 0;
+	font-weight: bold;
+	display: flex;
+	span {
+		padding-left: 10px;
+		color: #fff;	
 	}
-	.slider__content {
-		max-width: 420px;
-		.slider__content_title {
-			padding: 20px 0;
-		}
-		.slider__content_descr {
-			text-style: uppercase;
-			padding: 10px 0;
-			border-bottom: 1px solid #20b5a1;
-			border-top: 1px solid #20b5a1;
-			p {
-				color: #20b5a1;
-				line-height: 1.5rem;
-			}
-		}
-		.slider__botton {
-			margin: 20px 0;
-			font-weight: bold;
-			display: flex;
-			.slider__botton_icon {
-				display: flex;
-				background-color: #00bfa5;
-				border-radius: 4px;
-				align-items: center;
-				padding: 13px;
-				&:hover {
-					background-color: rgb(0,150,136);
-   		 }
-			}
-			span {
-				padding-left: 10px;
-				color: #fff;	
-			}
-		}
-	}
+}
+.slider__botton-icon {
+	display: flex;
+	background-color: #00bfa5;
+	border-radius: 4px;
+	align-items: center;
+	padding: 13px;
+	&:hover {
+		background-color: rgb(0,150,136);
+   }
 }
 .slider__arrows span {
 	position: absolute;
@@ -75,10 +75,10 @@
 	z-index: 2000;
 	transition: opacity 0.4s ease-in-out-out 0.2s;
 }
-.slider__arrows span.slider__arrows-prev {
+.slider__arrows-prev {
 	left: 30px;
 }
-.slider__arrows span.slider__arrows-next {
+.slider__arrows-next {
 	right: 30px;
 }
 .slider__dots {
@@ -90,22 +90,24 @@
 	z-index: 2000;
 	user-select: none;
 }
-.slider__dots span {
-	display: inline-block;
-	box-sizing: border-box;
-	position: relative;
-	width: 13px;
-	height: 13px;
-	border: 3px solid #26bbaa;
-	border-radius: 50%;
-	background: #fff;
-	margin: 10px;
-	cursor: pointer;
-	box-shadow: 
-		1px 1px 1px rgba(0,0,0,0.1) inset, 
-		1px 1px 1px rgba(255,255,255,0.1);
+.slider__dots {
+	span {
+		display: inline-block;
+		box-sizing: border-box;
+		position: relative;
+		width: 13px;
+		height: 13px;
+		border: 3px solid #26bbaa;
+		border-radius: 50%;
+		background: #fff;
+		margin: 10px;
+		cursor: pointer;
+		box-shadow: 
+			1px 1px 1px rgba(0,0,0,0.1) inset, 
+			1px 1px 1px rgba(255,255,255,0.1);
+	}
 }
-.slider__dots span.slider__dots_current:after {
+.slider__dots-current:after {
 	content: '';
 	width: 9px;
 	height: 9px;
@@ -120,45 +122,45 @@
 	background-position: 0 -100px;
 	text-align: center;
 	padding: 70px 0 0;
-	.works_title {
-		position: relative;
-		padding-bottom: 20px;
-		margin: 0 auto;
-		width: 450px;
-	}
+}
+.works__title {
+	position: relative;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	width: 450px;
 }
 .comments__wrap {
 	display: flex;
 	justify-content: 	center;
-	.comments__group {
-		background: url('/assets/img/bracked.png') no-repeat;
-		text-align: left;
-		flex-grow: 1;
-		margin: 50px 10px 0;
-		padding: 60px 0 70px;
-		max-width: 400px;
+}
+.comments__group {
+	background: url('/assets/img/bracked.png') no-repeat;
+	text-align: left;
+	flex-grow: 1;
+	margin: 50px 10px 0;
+	padding: 60px 0 70px;
+	max-width: 400px;
+}
+.comments__description {
+	line-height: 1.5;
+}
+.comments__group-img {
+	display: block;
+	padding: 30px 20px 0 0;
+	width: 80px;
+	height: 80px;
+	float: left;
+	img {
+		width: 100%;
+		height: 	100%;
+		border-radius: 50%;
 	}
-	.comments__group_descr {
-		line-height: 1.5;
-	}
-		.comments__group_img {
-			display: block;
-			padding: 30px 20px 0 0;
-			width: 80px;
-			height: 80px;
-			float: left;
-			img {
-				width: 100%;
-				height: 	100%;
-				border-radius: 50%;
-			}
-		}
-		.comments__group_name {
-			padding: 50px 0 0 0;
-		}
-	.comments__group_person	{
-		display: flex;
-	}
+}
+.comments__group-name {
+	padding: 50px 0 0 0;
+}
+.comments__group-person	{
+	display: flex;
 }
 .feadback {
 	width: 380px;
@@ -167,32 +169,32 @@
    background-color: rgba(252,252,252, 0.7);
    border-radius: 4px;
    padding-top: 37px 0;
-   .feadback__form {
-   	padding-top: 30px;
-   }
-   .feadback__label_input {
-   	box-sizing: border-box;
-   	height: 40px;
-   	border: none;
-   	line-height: 40px;
-   	padding: 0 10px;
-   	width: 90%;
-   	margin: 10px;
-   	border-radius: 4px;
-   }
-   .feadback__textarea {
-   	box-sizing: border-box;
-   	height: 140px;
-   	border: none;
-   	padding: 10px;
-   	width: 90%;
-   	margin: 10px 0;
-   	border-radius: 4px;
-   	resize: none;
-   }
-   .welcome__navigation_item-reset {
-   	background-color: #268c8b;
-   }
+}
+.feadback__form {
+	padding-top: 30px;
+}
+.feadback__input {
+	box-sizing: border-box;
+	height: 40px;
+	border: none;
+	line-height: 40px;
+	padding: 0 10px;
+	width: 90%;
+	margin: 10px;
+	border-radius: 4px;
+}
+.feadback__textarea {
+	box-sizing: border-box;
+	height: 140px;
+	border: none;
+	padding: 10px;
+	width: 90%;
+	margin: 10px 0;
+	border-radius: 4px;
+	resize: none;
+}
+.welcome__button-reset {
+	background-color: #268c8b;
 }
 .icon-works_header,.icon-about_header {
 	position: absolute;
@@ -203,7 +205,7 @@
 	top: 25%;
 	transform: translate(50%, -50%);
 }
-.about-me__icon_up {
+.about-me__icon-up {
 	padding: 70px 0 60px;
 	.icon-portf_arrow_up,.icon-portf_arrow_down {
 		fill: rgba(255,255,255, 0.5);

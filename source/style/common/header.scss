@@ -12,7 +12,7 @@
 .header__item {
 	margin: 0 30px;
 }
-.welcome__text_white {
+.welcome__text-name_white {
    h2 {
       color: #fcfcfc;
    }
@@ -21,22 +21,12 @@
       color: #d5dad2
    }
 }
-.page__about_wrap {
-	.polygon__triangle_right {
-		fill: #eeebdf;
-	}
-	.polygon__triangle_left {
-		fill: #efeee9
-	}
+.header__content {
+	max-height: 530px;
+	display: block;
+	position: relative;
 }
-.page__about_wrap {
-	.header__content {
-		max-height: 530px;
-		display: block;
-		position: relative;
-	}
-}	
-.header__content_wrap {
+.header__content-wrap {
 	box-sizing: border-box;
 	padding-top: 65px;
 	display: block;
@@ -53,7 +43,7 @@
 	transform: translate(-50%,-25%);
 	fill: rgba(252,252,252, 0.1);
 }
-.header__icon_down {
+.header__arrow-down {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);

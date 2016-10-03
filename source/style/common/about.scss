@@ -1,34 +1,34 @@
 .main {
 	width: 	100%;
 	display: flex;
-	background-color: #fff;
-	.info-self {
-		box-sizing: border-box;
-		background-color: #efeee9;
-		width: 50%;
-		padding: 0 80px 40px;
-		.info-self__content {
-			text-align: center;
-		}
-		.info-self__avatar {
-			padding-bottom: 40px;
-		}
-		.info-self__description {
-			text-align: left;
-			p {
-				padding: 10px 0;
-			}
-		}
-		.dashed-title {
-			width: 500px;
-		}
-	}
-	.skills {
-		background-color: #eeebdf;
-		overflow: hidden;
-		width: 50%;
+	background-color: #fff;	
+}
+.info-self {
+	box-sizing: border-box;
+	background-color: #efeee9;
+	width: 50%;
+	padding: 0 80px 40px;
+}
+.info-self__content {
+	text-align: center;
+}
+.info-self__avatar {
+	padding-bottom: 40px;
+}
+.info-self__description {
+	text-align: left;
+	p {
+		padding: 10px 0;
 	}
 }
+.dashed-title {
+	width: 500px;
+}
+.skills {
+	background-color: #eeebdf;
+	overflow: hidden;
+	width: 50%;
+	}
 .dashed-title {
 	position: relative;
 	width: 250px;
@@ -39,48 +39,52 @@
 .skills__description {
 	padding: 0 20px 40px 40px;
 }
-.content__skills {
-	.skills__title {
-		margin-left: 40px;
-	}
+.skills__title {
+	margin-left: 40px;
 }
 .skills__list {
-		display: flex;
-		padding-left: 10px;
-		margin: 0; 
-		flex-wrap: wrap;
-	.skills__list_item {
-		padding: 20px 18px;
-		text-decoration: none;
-		list-style: none;
-	}	
+	display: flex;
+	padding-left: 10px;
+	margin: 0; 
+	flex-wrap: wrap;
 }
+.skills__list-item {
+	padding: 20px 18px;
+	text-decoration: none;
+	list-style: none;
+}	
 .maps {
 	background-image: url(/assets/img/maps.jpg);
 	height: 630px;
 	z-index: -1;
 	position: relative;
-	.maps__contacts {
-		text-align: left;
-	}
-	.maps__contacts_list {
-		list-style: none;
-		margin: 0;
-		padding-bottom: 40px;
-		.maps__contacts_item {
-			span {
-				padding-right: 6px;
-			}
-			width: 100%;
-			display: flex;
-			align-items: center;
-			padding: 1px;
-		}
-	}
 }
-.page__about_wrap {
+.maps__contacts {
+	text-align: left;
+	}
+.maps__contacts-list {
+	list-style: none;
+	margin: 0;
+	padding-bottom: 40px;
+}
+.maps__contacts-item {
+	span {
+		padding-right: 6px;
+	}
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 1px;
+}
+.page__wrap_about {
  	min-height: 100%;
    margin-bottom: -150px;
+   .polygon__triangle-right {
+		fill: #eeebdf;
+	}
+	.polygon__triangle-left {
+		fill: #efeee9
+	}
    &:after {
   		content: '';
   		display: block;

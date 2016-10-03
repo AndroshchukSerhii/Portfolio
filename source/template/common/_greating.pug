@@ -1,20 +1,20 @@
 .button__wrap
 	a(href="#",class="button__log") Авторизоваться
 .welcome
-	.welcome__img_wrap
-		img(src="/assets/img/avatar.jpg", class="welcome__img_avatar")
-	.welcome__text_name 
+	.welcome__img-wrap
+		img(src="/assets/img/avatar.jpg", class="welcome__avatar")
+	.welcome__text-name 
 		h2 #{name}
 		p  Личный сайт веб разработчика
-	.welcome_link
+	.welcome__link
 		ul.icon__wrap-link
-			li.icon__wrap-item.icon__wrap-blue
+			li.icon__wrap.icon__wrap_green
 				a(href="#")
 					+icon('vk')
-			li.icon__wrap-item.icon__wrap-blue
+			li.icon__wrap.icon__wrap_green
 				a(href="#")
 					+icon('github') 
-			li.icon__wrap-item.icon__wrap-blue
+			li.icon__wrap.icon__wrap_green
 				a(href="#")
 					+icon('in')  
 	
@@ -30,18 +30,18 @@
 		h2 Авторизуйтесь
 	form.form__wraper
 		div.form__field
-			span.form__field_icon
+			span.form__icon
 			=""
 			input(type="text",value="Логин")
 		div.form__field
-			span.form__field_icon
+			span.form__icon
 			=""	
 			input(type="text",value="Пароль")
 		div.form__wraper-check
 			input(type="checkbox") 
 			| Я человек
 			p Вы точно не робот?
-			div.form__input_radio
+			div.form__radio
 				input(type="radio",name="radio",value="yes")
 				= "Да"
 				input(type="radio",name="radio",value="no", checked)

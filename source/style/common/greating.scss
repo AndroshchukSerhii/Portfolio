@@ -36,22 +36,22 @@ body {
    transform: translate(-50%, -50%);
    background-color: rgba(252,252,252, 0.85);
    border-radius: 4px;
-  .welcome__title {
-     min-width: 70%
-  }
 }
-.welcome__img_wrap {
+.welcome__title {
+  min-width: 70%
+}
+.welcome__img-wrap {
     width: 145px;
     height: 145px;
     margin: 0 auto;
 }
-.welcome__img_avatar {
+.welcome__avatar {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
     overflow: hidden;
 }  
-.welcome__text_name {
+.welcome__text-name {
     text-align: center;
     padding-top: 20px;
     width: 100%;
@@ -71,13 +71,13 @@ body {
   li {
     margin: 0 14px;
   }
-  .icon__wrap-blue {
-    .icon-vk,.icon-github,.icon-in {
-      fill: #73d4c8;
-    }
-    .icon-vk:hover,.icon-github:hover,.icon-in:hover {
-      fill: #00bfa5;
-    }
+}
+.icon__wrap_green {
+  .icon-vk,.icon-github,.icon-in {
+    fill: #73d4c8;
+  }
+  .icon-vk:hover,.icon-github:hover,.icon-in:hover {
+    fill: #00bfa5;
   }
 }
 .welcome__navigation {
@@ -114,12 +114,12 @@ body {
    p {
     padding-top: 20px; 
   }
-  .form__wraper-check {
-    padding: 10px 0 40px;
-  }
-  .form__input_radio {
-    padding-top: 10px;
-  }
+}
+.form__wraper-check {
+  padding: 10px 0 40px;
+}
+.form__radio {
+  padding-top: 10px;
 }
 .form__field {
   display: flex;
@@ -134,10 +134,10 @@ body {
     padding: 0;
     border-radius: 0 4px 4px 0;
   }
-  .form__field_icon {
-    width: 45px;
-    height: 45px;
-    background-color: #f0efe9;
-    border-radius: 4px 0 0 4px;
-  }
+}
+.form__icon {
+  width: 45px;
+  height: 45px;
+  background-color: #f0efe9;
+  border-radius: 4px 0 0 4px;
 }
