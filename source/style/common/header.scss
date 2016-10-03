@@ -8,6 +8,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: rgba(1,102,114,0.3);
 }
 .header__item {
 	margin: 0 30px;
@@ -25,6 +26,7 @@
 	max-height: 530px;
 	display: block;
 	position: relative;
+	background-color: rgba(1,102,114,0.3)
 }
 .header__content-wrap {
 	box-sizing: border-box;

@@ -10,17 +10,30 @@
 		.slider__right
 			.slider__content
 				h2.slider__title Сайт школы онлайн Образования
-				.slider__descr
-					p  HTML , CSS, JAVASCRIPT HTML
+					ul.slider__skills-list
+						li HTML
+						li CSS
+						li JAVASCRIPT
+						li HTML
+						li HTML
+						li CSS
+						li JAVASCRIPT
+						li HTML
+						li HTML
+						li CSS
+						li JAVASCRIPT
+						li HTML												
 				.slider__button
 					a(href="#").slider__botton-icon
 						+icon('link')
 						span.slider__botton-descr Посмотреть сайт
 		nav.slider__arrows
 			span.slider__arrows-prev
-				+icon('portf_arrow_down')
+				a(href="#")
+					+icon('portf_arrow_down')
 			span.slider__arrows-next
-				+icon('portf_arrow_up')
+				a(href="#")
+					+icon('portf_arrow_up')
 		nav.slider__dots
 			span.slider__dots-current
 			span
@@ -51,17 +64,18 @@
 							p основатель Loftschool
 		.feadback
 			h2 Связаться со мной
-			form.feadback__form
+			form(class="feadback__form",action="#")
 				label.feadback__label
-					input(class="feadback__input")
+					input(class="feadback__input",type="name",name="name",placeholder="Имя",required="")
 				label.feadback__label
-					input(class="feadback__input")
+					input(class="feadback__input",type="email",name="mail",placeholder="Email",required="")
 				label.feadback__label
-					textarea.feadback__textarea
+					textarea(class="feadback__textarea",type="text" name="textarea",placeholder="Ваше сообщение")
 			ul.welcome__navigation
 				li
-					a(href="/#")  Отправить
+					input(class="form__button",name="send",type="submit",value="Отправить")
 				li.welcome__button-reset
-					a(href="#")  Очистить
+					input(class="form__button",name="clear",type="reset",value="Очистить")
 		.about-me__icon-up
-			+icon('portf_arrow_up')
+			a(href="#")
+				+icon('portf_arrow_up')

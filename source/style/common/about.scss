@@ -21,20 +21,39 @@
 		padding: 10px 0;
 	}
 }
-.dashed-title {
-	width: 500px;
-}
 .skills {
 	background-color: #eeebdf;
 	overflow: hidden;
 	width: 50%;
 	}
 .dashed-title {
+	display: flex;
 	position: relative;
-	width: 250px;
+	width: 300px;
 	margin: 0 auto;
-	text-align: center;
+	// text-align: center;
+	justify-content: center;
 	padding-bottom: 30px;
+	h2{
+		text-align: center;
+	}
+	&:before, &:after{
+    content: '-';
+    font-size: 60px;
+    padding: 0 10px;
+    opacity: 0.3;
+ 	}
+}
+.dashed-title_h2{
+	&:before, &:after{
+    content: ' - ';
+    font-size: 30px;
+    padding: 0 10px;
+    opacity: 0.3;
+ 	}
+}
+.dashed-title_500px{
+	width: 500px
 }
 .skills__description {
 	padding: 0 20px 40px 40px;

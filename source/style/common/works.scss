@@ -11,6 +11,12 @@
 	display: flex;
 	width: 500px;
 	justify-content: center;
+	&:before, &:after{
+    content: '-';
+    font-size: 60px;
+    padding: 0 10px;
+    opacity: 0.3;
+ 	}
 }
 .slider {
 	position: relative;
@@ -35,14 +41,20 @@
 .slider__title {
 	padding: 20px 0;
 }
-.slider__descr {
+.slider__skills-list {
+	display: flex;
+	flex-wrap: wrap;
 	text-style: uppercase;
 	padding: 10px 0;
 	border-bottom: 1px solid #20b5a1;
 	border-top: 1px solid #20b5a1;
-	p {
-		color: #20b5a1;
-		line-height: 1.5rem;
+	color: #20b5a1;
+	line-height: 1.5rem;
+	li {
+		font-size: 16px;
+		font-weight: normal;
+		padding-right: 10px;
+		list-style: none;
 	}
 }
 .slider__button {
@@ -195,6 +207,19 @@
 }
 .welcome__button-reset {
 	background-color: #268c8b;
+}
+.form__button{
+	display: flex;
+	cursor: pointer;
+	border-style: none;
+	color: #fff;
+	padding: 0;
+	width: 100%;
+	justify-content: center;
+	// width: 185px;
+	background-color: initial;
+	flex-grow: 1;
+	min-height: 45px;
 }
 .icon-works_header,.icon-about_header {
 	position: absolute;
