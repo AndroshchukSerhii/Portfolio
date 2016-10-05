@@ -16,7 +16,11 @@ h1,h2,h3,h4,h5,h6,p,span {
 	padding: 0;
 	color: #455a64;
 }
+p {
+  font-family: 'robotoregular', sans-serif;
+}
 h1,h2,h3 {
+  font-weight: normal;
   font-family: 'barnierRR',sans-serif;
   // text-transform: uppercase;
 }
@@ -25,19 +29,24 @@ h1 {
 }
 h2 {
 	font-size: 35px;
+
 }
 .icon {
   width: 25px;
   height: 25px;
   fill: rgba(255,255,255, 0.5);
-  &-hamburger,&-link{
+  &-hamburger,&-link {
     fill: #fff;
   }  
-  &-skype, &-phone, &-envelope2, &-map_marker,&-portf_arrow_up,&-portf_arrow_down{
+  &-skype, &-phone, &-envelope2, &-map_marker,&-portf_arrow_up,&-portf_arrow_down {
     fill: #00bea4;
   }
   &-vk {
     width: 27px;
+  }
+  &-hamburger {
+    width: 40px;
+    height: 40px;
   }
   &-vk_round,&-github_round,&-in_round {
     width: 35px;
@@ -50,8 +59,9 @@ h2 {
     fill: #fff;
   }
 }
-@import 'common/header';
+
 @import 'common/greating';
+@import 'common/header';
 @import 'common/about';
 @import 'common/works';
 @import 'common/blog';

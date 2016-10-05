@@ -13,17 +13,14 @@ header.header__wrap
 	.header__item
 		span
 			+icon('hamburger')
-.header__content
-	+icon('portfolio_header')
-	.header__content-wrap
+.header__content.header__content_blog
+	+icon('portfolio_header').
+	.header__content-wrap.header__content-wrap_blog
 		.welcome__img-wrap
 			img(src="/assets/img/avatar.jpg", class="welcome__avatar" alt="portfolio")
 		.welcome__text-name.welcome__text-name_white
-			h2 #{name}
+			h1.welcome__title-blog #{name}
 			p #{descr} 
-	.header__arrow-down
-		a(href="#")
-			+icon('portf_arrow_down')
 	svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
-		polygon(points="0,0   0,86   500.8,86   500.8,75.5", class="polygon__triangle-left")
-		polygon(points="1000,00   1000,86   500,86   500,75.5", class="polygon__triangle-right")
+		polygon(points="0,0   0,86   500.8,86   500.8,75.5", class="polygon__triangle-left polygon__triangle-blog")
+		polygon(points="1000,00   1000,86   500,86   500,75.5", class="polygon__triangle-rigth polygon__triangle-blog")

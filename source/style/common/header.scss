@@ -16,9 +16,12 @@
 .welcome__text-name_white {
    h2 {
       color: #fcfcfc;
+      font-size: 35px;
+      padding-top: 15px;
+      font-weight: normal;
    }
    p {
-		// font-family: 'robotolight', sans-serif;
+		font-family: 'robotolight', sans-serif;
       color: #d5dad2
    }
 }
@@ -28,13 +31,21 @@
 	position: relative;
 	background-color: rgba(1,102,114,0.3)
 }
+.header__content_blog {
+	max-height: 400px;
+}
 .header__content-wrap {
 	box-sizing: border-box;
-	padding-top: 65px;
+	padding: 65px 0 120px;
 	display: block;
 	width: 500px;
 	margin: auto;
 	max-height: 410px;
+}
+.header__content-wrap_blog {
+	max-height: 210px;
+	padding: 0 120px;
+
 }
 .icon-portfolio_header {
 	position: absolute;

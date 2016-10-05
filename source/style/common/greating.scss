@@ -13,8 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    min-width: 180px;
-    height: 45px;
+    min-width: 160px;
+    height: 44px;
     border: 1px solid #fff;
     border-radius: 4px;
     transition: all 0.3s linear;
@@ -41,27 +41,34 @@ body {
   min-width: 70%
 }
 .welcome__img-wrap {
-    width: 145px;
-    height: 145px;
+    width: 140px;
+    height: 140px;
+    z-index: 80;
     margin: 0 auto;
+    overflow: hidden;
+    border-radius: 100%;
 }
 .welcome__avatar {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 50%;
-    overflow: hidden;
+    height: 100%;
 }  
 .welcome__text-name {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 12px;
     width: 100%;
+    h2{
+      font-family: 'robotomedium';
+      font-size: 28px;
+      line-height: 34px;
+
+    }
     p {
       padding-top: 10px;
+      font-family: 'robotomedium';
     }
 }
 .icon__wrap-link {
   list-style: none;
-  height: 100px;
+  height: 95px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -72,7 +79,7 @@ body {
     margin: 0 14px;
   }
 }
-.icon__wrap_green {
+.icon__wrap-green {
   .icon-vk,.icon-github,.icon-in {
     fill: #73d4c8;
   }

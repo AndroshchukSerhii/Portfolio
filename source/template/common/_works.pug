@@ -6,23 +6,15 @@
 			h1 Мои Работы
 	.slider
 		.slider__left
-			img(src="/assets/img/work-4.png")
+			img(src="/assets/img/work-4.png", alt="work4")
 		.slider__right
 			.slider__content
 				h2.slider__title Сайт школы онлайн Образования
-					ul.slider__skills-list
-						li HTML
-						li CSS
-						li JAVASCRIPT
-						li HTML
-						li HTML
-						li CSS
-						li JAVASCRIPT
-						li HTML
-						li HTML
-						li CSS
-						li JAVASCRIPT
-						li HTML												
+				ul.slider__skills-list
+					li HTML
+					li CSS
+					li JAVASCRIPT
+					li HTML											
 				.slider__button
 					a(href="#").slider__botton-icon
 						+icon('link')
@@ -34,11 +26,15 @@
 			span.slider__arrows-next
 				a(href="#")
 					+icon('portf_arrow_up')
-		nav.slider__dots
-			span.slider__dots-current
-			span
-			span
-			span
+		ul.slider__dots
+			li.slider__dots-current
+				a(href="#")
+			li
+				a(href="#")
+			li
+				a(href="#")
+			li
+				a(href="#")
 	.about-me
 		.works__title
 			+icon("about_header")
@@ -49,7 +45,7 @@
 					p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
 				.comments__group-person
 						.comments__group-img
-							img(src="/assets/img/DimaK.jpg")
+							img(src="/assets/img/DimaK.jpg" alt="Dima")
 						.comments__group-name
 							h4 Ковальчук Дмитрий
 							p основатель Loftschool
@@ -58,7 +54,7 @@
 					p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
 				.comments__group-person
 						.comments__group-img
-							img(src="/assets/img/DimaK.jpg")
+							img(src="/assets/img/DimaK.jpg" alt="Zar")
 						.comments__group-name
 							h4 Ковальчук Дмитрий
 							p основатель Loftschool
@@ -66,16 +62,16 @@
 			h2 Связаться со мной
 			form(class="feadback__form",action="#")
 				label.feadback__label
-					input(class="feadback__input",type="name",name="name",placeholder="Имя",required="")
+					input(class="feadback__input",type="text",name="name",placeholder="Имя")
 				label.feadback__label
-					input(class="feadback__input",type="email",name="mail",placeholder="Email",required="")
+					input(class="feadback__input",type="email",name="mail",placeholder="Email")
 				label.feadback__label
-					textarea(class="feadback__textarea",type="text" name="textarea",placeholder="Ваше сообщение")
-			ul.welcome__navigation
-				li
-					input(class="form__button",name="send",type="submit",value="Отправить")
-				li.welcome__button-reset
-					input(class="form__button",name="clear",type="reset",value="Очистить")
+					textarea(class="feadback__textarea",name="textarea",placeholder="Ваше сообщение")
+				ul.welcome__navigation
+					li
+						input(class="form__button",name="send",type="submit",value="Отправить")
+					li.welcome__button-reset
+						input(class="form__button",type="reset",name="Reset",value="Очистить")
 		.about-me__icon-up
 			a(href="#")
 				+icon('portf_arrow_up')

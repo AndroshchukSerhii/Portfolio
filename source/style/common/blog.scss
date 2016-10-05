@@ -1,47 +1,50 @@
-.blog__wrap{
-	padding: 30px 10px 60px;
+.blog__wrap {
+	padding: 50px 10px 60px;
 	background: #fff;
 	display: flex;
 }
-.blog__navigation{
+.blog__navigation {
 	box-sizing: border-box;
 	width: 25%;
 }
-.blog__content{
+.welcome__title-blog {
+	color: #fff;
+}
+.blog__content {
 	width: 75%;
 	margin: 0;
 	padding: 0 40px 0 80px;
-	span{
+	span {
 		line-height: 67px;
 		color: #7fd6c7;
 	}
-	p{
-		line-height: 2;
+	p {
+		line-height: 1.5;
 		padding-bottom: 20px;
 	}
 }
-.blog__list{
+.blog__list {
 	margin: 0;
 	padding: 0 40px;
 	text-align: right;
 	list-style: none;
 }
-.blog__list-item{
+.blog__list-item {
 	padding: 10px;
-	a{
+	a {
 		font-family: "robotoregular", sans-serif;
 		font-size: 16px;
 		line-height: 1.5;
 		color: #455a64;
 	}
 }
-.blog__list-item_active{
+.blog__list-item_active {
 	border-right: 3px solid #00bfa5;
-	a{
+	a {
 		font-weight: bold;
 		color: #00bfa5;
 	}
 }
-.blog__themes{
-	padding-right: 30px;
+.blog__themes {
+	padding-right: 150px;
 }
