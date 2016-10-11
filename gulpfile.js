@@ -13,6 +13,7 @@ global.$ = {
   buffer: require('vinyl-buffer'),
   merge: require('merge-stream'),
   rimraf: require('rimraf'),
+  Cssunit: require('gulp-css-unit'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
 };

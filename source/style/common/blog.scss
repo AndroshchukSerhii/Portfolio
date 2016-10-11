@@ -1,4 +1,6 @@
 .blog__wrap {
+	box-sizing: border-box;
+	width: 100%;
 	padding: 50px 10px 60px;
 	background: #fff;
 	display: flex;
@@ -11,9 +13,10 @@
 	color: #fff;
 }
 .blog__content {
+	box-sizing: border-box;
 	width: 75%;
 	margin: 0;
-	padding: 0 40px 0 80px;
+	padding-left: 80px;
 	span {
 		line-height: 67px;
 		color: #7fd6c7;
@@ -23,9 +26,12 @@
 		padding-bottom: 20px;
 	}
 }
+.blog__img {
+	max-width: 100%;
+}
 .blog__list {
 	margin: 0;
-	padding: 0 40px;
+	padding: 0 0 0 40px;
 	text-align: right;
 	list-style: none;
 }
@@ -46,5 +52,5 @@
 	}
 }
 .blog__themes {
-	padding-right: 150px;
+	padding-right: 100px;
 }

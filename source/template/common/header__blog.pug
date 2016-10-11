@@ -10,9 +10,10 @@ header.header__wrap
 			li
 				a(href="#")
 					+icon('in')
-	.header__item
-		span
-			+icon('hamburger')
+	.header__item.header__item_humburger#toggle
+		span(class="header__humburger_top")
+		span(class="header__humburger_middle")
+		span(class="header__humburger_bottom")
 .header__content.header__content_blog
 	+icon('portfolio_header').
 	.header__content-wrap.header__content-wrap_blog
@@ -24,3 +25,18 @@ header.header__wrap
 	svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="traingle")
 		polygon(points="0,0   0,86   500.8,86   500.8,75.5", class="polygon__triangle-left polygon__triangle-blog")
 		polygon(points="1000,00   1000,86   500,86   500,75.5", class="polygon__triangle-rigth polygon__triangle-blog")
+	.overlay#overlay
+		.overlay-menu
+			ul
+				li
+					a(href="/works.html")
+						h2  Мои работы
+				li
+					a(href="/blog.html")
+						h2  Блог
+				li
+					a(href="/about.html")
+						h2 Обо мне
+				li
+					a(href="/index.html")
+						h2 Авторизация

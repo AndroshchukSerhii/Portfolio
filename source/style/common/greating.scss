@@ -1,12 +1,92 @@
 body {
-    background: url('/assets/img/mountains_1200.jpg') no-repeat;
-    background-size: 100%;
+    background: url('/assets/img/mountains_1800.jpg') no-repeat;
+    background-position: top center;
+    // background-attachment: local,fixed;
 }
+/* --------- preloader --------- */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: #1ac2a9;
+}
+
+.preloader__spinner {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preloader__animation {
+  width: 150px;
+  height: 150px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: #fff;
+  position: relative;
+  animation: spin 2s linear infinite;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #fff;
+
+  }
+
+  &:before {
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    animation: spin 3s linear infinite;
+
+  }
+
+  &:after {
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    animation: spin 1.5s linear infinite;
+  }
+}
+
+.preloader__percents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .button__wrap {
     display: flex;
     box-sizing: border-box;
     justify-content: flex-end;
     padding: 20px; 
+}
+.button__wrap_hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
 }
 .button__log {
     display: flex;
@@ -22,9 +102,6 @@ body {
       background: #fff;
       color: #00bfa5;
     }
-}
-.welcome_hidden {
-    display: none;
 }
 .welcome{
    width: 380px;
@@ -57,7 +134,7 @@ body {
     width: 100%;
     h2{
       font-family: 'robotomedium';
-      font-size: 28px;
+      font-size: 1.75rem;
       line-height: 34px;
 
     }
@@ -148,3 +225,48 @@ body {
   background-color: #f0efe9;
   border-radius: 4px 0 0 4px;
 }
+
+.cont-contactBtn {
+  min-height: 356px;
+  margin: 0 auto;
+  width: 380px;
+  position: relative;
+}
+.cont-flip {
+  position: absolute;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+.front, .back {
+  display: block;
+  padding-top: 40px;
+  text-align: center;
+  background-color: rgba(252,252,252, 0.85);
+  border-radius: 4px;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.back {
+  max-height: 335px;
+  transform: rotateY(180deg);
+}
+.cont-flip.flipped {
+  transform: rotateY(180deg);
+}
+.close {
+  display: block;
+  font-size: 25px;
+  color: rgba(9,187,167,0.8);
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgba(9,187,167,0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 4%;
+}
+
