@@ -5,36 +5,67 @@
 			+icon("works_header")
 			h1 Мои Работы
 	.slider
-		.slider__left
-			img(src="/assets/img/work-4.png", alt="work4")
-		.slider__right
-			.slider__content
-				h2.slider__title Сайт школы онлайн Образования
-				ul.slider__skills-list
-					li HTML
-					li CSS
-					li JAVASCRIPT
-					li HTML											
-				.slider__button
-					a(href="#").slider__botton-icon
-						+icon('link')
-						span.slider__botton-descr Посмотреть сайт
-		nav.slider__arrows
-			span.slider__arrows-prev
-				a(href="#")
-					+icon('portf_arrow_down')
-			span.slider__arrows-next
-				a(href="#")
-					+icon('portf_arrow_up')
-		ul.slider__dots
-			li.slider__dots-current
-				a(href="#")
-			li
-				a(href="#")
-			li
-				a(href="#")
-			li
-				a(href="#")
+		.slidesContainer
+			ul.slider__list
+				li.slider__item.active
+					.slider__left
+						img(src="/assets/img/work-1.png", alt="work4")
+					.slider__right
+						.slider__content
+							h2.slider__title Сайт школы онлайн Образования
+							ul.slider__skills-list
+								li HTML
+								li CSS
+								li JAVASCRIPT
+								li HTML											
+							.slider__button
+								a(href="#").slider__botton-icon
+									+icon('link')
+									span.slider__botton-descr Посмотреть сайт
+				li.slider__item
+					.slider__left
+						img(src="/assets/img/work-2.png", alt="work4")
+					.slider__right
+						.slider__content
+							h2.slider__title Сайт школы онлайн Образования
+							ul.slider__skills-list
+								li HTML
+								li CSS
+								li JAVASCRIPT
+								li HTML											
+							.slider__button
+								a(href="#").slider__botton-icon
+									+icon('link')
+									span.slider__botton-descr Посмотреть сайт
+				li.slider__item
+					.slider__left
+						img(src="/assets/img/work-3.png", alt="work4")
+					.slider__right
+						.slider__content
+							h2.slider__title Сайт школы онлайн Образования
+							ul.slider__skills-list
+								li HTML
+								li CSS
+								li JAVASCRIPT
+								li HTML											
+							.slider__button
+								a(href="#").slider__botton-icon
+									+icon('link')
+									span.slider__botton-descr Посмотреть сайт
+			ul.slider__dots
+			//- li.slider__dots-current.active
+			//- 	a(href="#",class="slider__dots-link")
+			//- li.slider__dots-current
+			//- 	a(href="#",class="slider__dots-link")
+			//- li.slider__dots-current
+			//- 	a(href="#",class="slider__dots-link")
+			//- li.slider__dots-current
+			//- 	a(href="#",class="slider__dots-link")
+		.slider__controls
+			a(href="#", class="slider__controls-prev slider__controls-button slider__arrows-prev")
+				+icon('portf_arrow_down')
+			a(href="#", class="slider__controls-next slider__controls-button slider__arrows-next")
+				+icon('portf_arrow_up')
 	.about-me
 		.works__title
 			+icon("about_header")
@@ -59,8 +90,11 @@
 							h4 Ковальчук Дмитрий
 							p основатель Loftschool
 		.feadback
-			h2 Связаться со мной
-			form(class="feadback__form",action="#")
+			.feadback__blur
+				img(src="/assets/img/bg_about.png")
+			.feadback__form-wrapper
+				h2 Связаться со мной
+				form(class="feadback__form",action="#")
 				label.feadback__label
 					input(class="feadback__input",type="text",name="name",placeholder="Имя")
 				label.feadback__label
