@@ -67,6 +67,7 @@
 			a(href="#", class="slider__controls-next slider__controls-button slider__arrows-next")
 				+icon('portf_arrow_up')
 	.about-me
+		img(src="")
 		.works__title
 			+icon("about_header")
 			h1 Что обо мне говорят
@@ -90,22 +91,21 @@
 							h4 Ковальчук Дмитрий
 							p основатель Loftschool
 		.feadback
-			.feadback__blur
-				img(src="/assets/img/bg_about.png")
 			.feadback__form-wrapper
 				h2 Связаться со мной
 				form(class="feadback__form",action="#")
-				label.feadback__label
-					input(class="feadback__input",type="text",name="name",placeholder="Имя")
-				label.feadback__label
-					input(class="feadback__input",type="email",name="mail",placeholder="Email")
-				label.feadback__label
-					textarea(class="feadback__textarea",name="textarea",placeholder="Ваше сообщение")
-				ul.welcome__navigation
-					li
-						input(class="form__button",name="send",type="submit",value="Отправить")
-					li.welcome__button-reset
-						input(class="form__button",type="reset",name="Reset",value="Очистить")
+					label.feadback__label
+						input(class="feadback__input",type="text",name="name",placeholder="Имя")
+					label.feadback__label
+						input(class="feadback__input",type="email",name="mail",placeholder="Email")
+					label.feadback__label
+						textarea(class="feadback__textarea",name="textarea",placeholder="Ваше сообщение")
+					ul.welcome__navigation
+						li
+							input(class="form__button",name="send",type="submit",value="Отправить")
+						li.welcome__button-reset
+							input(class="form__button",type="reset",name="Reset",value="Очистить")
+			.feadback__blur
 		.about-me__icon-up
 			a(href="#")
 				+icon('portf_arrow_up')

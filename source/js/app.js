@@ -1,4 +1,28 @@
 'use strict'
+var blur = (function(){
+    var 
+        blur = $('.feadback__blur'),
+        blurSection = $('.about-me');
+
+    return {
+      set : function() {
+        var 
+            imgWidth = $('.about-me').width(),
+            imgHeight = $('.about-me').height(),
+            posLeft = blurSection.offset().left - blur.offset().left,
+            posTop = blurSection.offset().top - blur.offset().top,
+            posTops = posTop + (-posTop*.1)
+            console.log(blur.offset().top);
+            console.log(posTop);
+            console.log(blurSection.offset().top); 
+        blur.css({
+          'background-size': imgWidth + 'px' + ' ' + imgHeight + 'px',
+          'background-position': posLeft + 'px' + ' ' + posTops + 'px'        
+        })
+      }
+    }
+}());
+
 $(function () {
 
 	var imgs = [];
@@ -729,39 +753,6 @@ var slider = (function() {
     mouse = [e.pageX, e.pageY];
   });
 }(jQuery));
-// var parallax = (function() {
-
-//   return {
-//     init: function() {
-//       var layer = $('.parallax').find('.parallax__layer');
-//       layer.map(function (key, value) {
-//         var bottonPosition = ((window.innerHeight / 2) * ((key + 1) / 100));
-//         $(value).css({
-//           'botton': '-' + bottonPosition + 'px',
-//           'transform': 'trnslate3d(0px, 0px, 0px)'
-//         });
-//       });
-//       $(window).on('mousemove', function(e) {
-//         var mouse_dx = e.pageX;
-//         var mouse_dy = e.pageY;
-
-//         var w = (window.innerWidth / 2) - mouse_dx;
-//         var h = (window.innerHeight / 2) - mouse_dy;
-
-//         layer.map(function (key, value) {
-//           var bottonPosition = ((window.innerHeight / 2) * ((key + 1) / 100));
-//           var widthPosition = w * ((key + 1) / 100);
-//           var heightPosition = h * ((kay + 1) / 100);
-//           $(value).css({
-//             'botton': '-' + bottonPosition + 'px',
-//             'transform': 'trnslate3d(' + widthPosition + 'px, '+ heightPosition + ', 0px)'
-//           });
-//         });
-//       }); 
-//     }
-//   }
-// }())
-
 
 $(document).ready(function(){
     jQuery('.parallax-layer').parallax({
@@ -770,6 +761,7 @@ $(document).ready(function(){
     if ($('.slider').length) {
       slider.init();   
     }
+   blur.set();
    $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
@@ -783,4 +775,7 @@ $(document).ready(function(){
     $('.button__wrap').toggleClass('button__wrap_hidden')
     return false;
   });
+});
+$(document).resize(function(){
+    blur.set();
 });
