@@ -1,7 +1,7 @@
 .page__wrap
 	include ../common/header
 	.works__wrap-title
-		.works__title
+		.works__title#section
 			+icon("works_header")
 			h1 Мои Работы
 	.slider
@@ -53,14 +53,6 @@
 									+icon('link')
 									span.slider__botton-descr Посмотреть сайт
 			ul.slider__dots
-			//- li.slider__dots-current.active
-			//- 	a(href="#",class="slider__dots-link")
-			//- li.slider__dots-current
-			//- 	a(href="#",class="slider__dots-link")
-			//- li.slider__dots-current
-			//- 	a(href="#",class="slider__dots-link")
-			//- li.slider__dots-current
-			//- 	a(href="#",class="slider__dots-link")
 		.slider__controls
 			a(href="#", class="slider__controls-prev slider__controls-button slider__arrows-prev")
 				+icon('portf_arrow_down')
@@ -107,5 +99,5 @@
 							input(class="form__button",type="reset",name="Reset",value="Очистить")
 			.feadback__blur
 		.about-me__icon-up
-			a(href="#")
+			a(href="#header")
 				+icon('portf_arrow_up')

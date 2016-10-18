@@ -1,27 +1,4 @@
 'use strict'
-var blur = (function(){
-    var 
-        blur = $('.feadback__blur'),
-        blurSection = $('.about-me');
-
-    return {
-      set : function() {
-        var 
-            imgWidth = $('.about-me').width(),
-            imgHeight = $('.about-me').height(),
-            posLeft = blurSection.offset().left - blur.offset().left,
-            posTop = blurSection.offset().top - blur.offset().top,
-            posTops = posTop + (-posTop*.1)
-            console.log(blur.offset().top);
-            console.log(posTop);
-            console.log(blurSection.offset().top); 
-        blur.css({
-          'background-size': imgWidth + 'px' + ' ' + imgHeight + 'px',
-          'background-position': posLeft + 'px' + ' ' + posTops + 'px'        
-        })
-      }
-    }
-}());
 
 $(function () {
 
@@ -84,6 +61,26 @@ $(function () {
   // $('.preloader').fadeOut();
 });
 
+var blur = (function(){
+    var 
+        blur = $('.feadback__blur'),
+        blurSection = $('.about-me');
+
+    return {
+      set: function() {
+        var 
+            imgWidth = $('.about-me').width(),
+            imgHeight = $('.about-me').height(),
+            posLeft = blurSection.offset().left - blur.offset().left,
+            posTop = blurSection.offset().top - blur.offset().top,
+            posTops = posTop + (-posTop*.1);
+        blur.css({
+          'background-size': imgWidth + 'px' + ' ' + imgHeight + 'px',
+          'background-position': posLeft + 'px' + ' ' + posTops + 'px'        
+        })
+      }
+    }
+}());
 
 var slider = (function() {
   //private
@@ -254,13 +251,13 @@ var slider = (function() {
         yparallax:     true,    //
         xorigin:       0.5,     // 0-1 - Sets default alignment. Only has effect when parallax values are something other than 1 (or true, or '100%')
         yorigin:       0.5,     //
-        decay:         0.66,    // 0-1 (0 instant, 1 forever) - Sets rate of decay curve for catching up with target mouse position
+        decay:         0.56,    // 0-1 (0 instant, 1 forever) - Sets rate of decay curve for catching up with target mouse position
         frameDuration: 30,      // Int (milliseconds)
         freezeClass:   'freeze' // String - Class added to layer when frozen
       },
   
       value = {
-        left: 0,
+        left: 1,
         top: 0,
         middle: 0.5,
         center: 0.5,
@@ -754,28 +751,69 @@ var slider = (function() {
   });
 }(jQuery));
 
-$(document).ready(function(){
-    jQuery('.parallax-layer').parallax({
-        mouseport: jQuery("#parallax")
-    });
-    if ($('.slider').length) {
-      slider.init();   
+var scrollPage = (function() {
+  return {
+    set: function() {
+      $("a[href*=#]").on("click", function(e){
+          var anchor = $(this);
+          $('html, body').stop().animate({
+              scrollTop: $(anchor.attr('href')).offset().top
+          }, 777);
+          e.preventDefault();
+          return false;
+      });
     }
-   blur.set();
-   $('#toggle').click(function() {
-   $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
-   $('body').toggleClass('stop-scrolling');
-   // $('body').bind('touchmove', function(e){e.preventDefault()})
-   // $('body').unbind('touchmove')
-  }); 
-    // Declare parallax on layers
+  }
+}());
+
+$(document).ready(function(){
   $('.flip').click(function(){
     $('.cont-flip').toggleClass('flipped');
     $('.button__wrap').toggleClass('button__wrap_hidden')
     return false;
   });
+
+  jQuery('.parallax-layer').parallax({
+        mouseport: jQuery("#parallax")
+    });
+    if ($('.slider').length) {
+      slider.init();   
+    }
+    if ($('#section').length) {
+      scrollPage.set();
+    }
+
+   $('#toggle').click(function() {
+     $(this).toggleClass('active');
+     $('#overlay').toggleClass('open');
+     $('body').toggleClass('stop-scrolling');
+    // $('body').bind('touchmove', function(e){e.preventDefault()})
+    // $('body').unbind('touchmove')
+    });
+  if ($('#map').length) {
+      ymaps.ready(function () {
+        // В функцию поступает пространство имен, которое содержит все запрощенные при инициализации модули. 
+          var myMap = new ymaps.Map('map', {
+                center: [50.45111022, 30.45062542],
+                zoom: 12,
+                // В данном примере карта создается без контролов, так как те не были загружены при инициализации API.
+                controls: []
+            }),
+            placemark = new ymaps.Placemark(
+                myMap.getCenter(), {
+                }
+            );
+             myMap.behaviors.disable('scrollZoom');
+        // myMap.geoObjects.add(placemark);  
+      }); 
+  }
+  if ($('.feadback').length) {
+    blur.set();
+  }
+
 });
 $(document).resize(function(){
+  if ($('.feadback').length) {
     blur.set();
+  }
 });

@@ -1,7 +1,7 @@
 .page__wrap_about
 	include ../common/header
 	main.main
-		.info-self
+		.info-self#section
 			.dashed-title.dashed-title_500px
 				+icon("about_header")
 				h1 Обо мне
@@ -68,6 +68,7 @@
 							img(src="/assets/img/gulp.png" alt="skills")
 						.skills__circle-content
 	.maps
+		#map
 		.welcome.welcome_about
 			.dashed-title.dashed-title_h2
 				h2 Контакты
@@ -76,15 +77,15 @@
 					li.maps__contacts-item
 						span
 							+icon('skype')
-						a(href="#") bapura96
+						a(href="skype:bapura96?userinfo") bapura96
 					li.maps__contacts-item
 						span
 							+icon('envelope2')
-						a(href="#") androschykserg@gmail.com 
+						a(href="mailto:androschykserg@gmail.com") androschykserg@gmail.com 
 					li.maps__contacts-item
 						span
 							+icon('phone')
-						a(href="#") +38 063 612 07 15
+						a(href="tel:+380636120715") +38 063 612 07 15
 					li.maps__contacts-item
 						span
 							+icon('map_marker')

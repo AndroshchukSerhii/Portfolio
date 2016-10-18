@@ -91,11 +91,14 @@
 	list-style: none;
 }
 .maps {
-	background-image: url("/assets/img/maps.jpg");
-	background-size: content;
+
 	height: 970px;
 	position: relative;
 	
+}
+#map {
+	width: 100%;
+	height: 100%;
 }
 .maps__contacts {
 	text-align: left;

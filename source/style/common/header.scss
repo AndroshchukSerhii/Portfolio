@@ -2,9 +2,12 @@ $color-active: #fff;
 $color-main: #10bca6;
 $color-link: #fff;
 $color-humburger: #fff;
+.header__container {
+  background-image: url("../img/mountains_1800.jpg");
+  background-attachment: cover;
+}
 .page__wrap {
   min-height: 100%;
-  background-size: 100% 100%;
   background-position: top center;
   margin-bottom: -150px;
    &:after {
@@ -272,11 +275,12 @@ $color-humburger: #fff;
 .header__arrow-down {
 	position: absolute;
 	left: 50%;
+  z-index: 3;
 	transform: translateX(-50%);
 	.icon-portf_arrow_down {
 		fill: rgba(255,255,255,0.5);
 		&:hover {
 			fill: rgba(255,255,255,1);
-		}
+    }
 	}
 }

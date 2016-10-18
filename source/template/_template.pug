@@ -17,6 +17,7 @@ html(leng="ru")
     link(rel='stylesheet' href='/assets/css/foundation.css')
     link(rel='stylesheet' href='/assets/css/app.css')
     script(src='/assets/js/foundation.js' defer)
+
    
 
     <!--[if lt IE 9]>
@@ -25,5 +26,5 @@ html(leng="ru")
 
   body
     block content
-
+    script(src="http://api-maps.yandex.ru/2.1/?load=Map,Placemark,geoObject.addon.balloon&lang=ru_RU" type="text/javascript")
     script(src='/assets/js/app.js' defer)

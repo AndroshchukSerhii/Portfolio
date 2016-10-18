@@ -5,9 +5,13 @@
 	}
 }
 .weclome-footer {
-	height: 90px;
+	position: absolute;
+	// height: 90px;
 	color: #ebedee;
 	font-family: 'robotolight', sans-serif;
+	left: 50%;
+	bottom: 50px;
+	transform: translateX(-50%);
 	display: flex;
 	justify-content: center;
 	align-items: center;

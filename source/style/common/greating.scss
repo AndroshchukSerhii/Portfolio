@@ -16,7 +16,7 @@ body {
     position: absolute;
 }
 .parallax-layer_7 {
-  width:100%;
+  width:1600px;
   height:100%;
 }
 .parallax-layer_6 {
@@ -123,6 +123,7 @@ body {
     box-sizing: border-box;
     justify-content: flex-end;
     padding: 20px; 
+    z-index: 10;
 }
 .button__wrap_hidden{
     visibility: hidden;
