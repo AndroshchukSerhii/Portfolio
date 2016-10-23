@@ -7,61 +7,61 @@
 		img(class="parallax-layer parallax-layer_3", src="/assets/img/Layer3.png", alt="")
 		img(class="parallax-layer parallax-layer_2", src="/assets/img/Layer2.png", alt="")
 		img(class="parallax-layer parallax-layer_1", src="/assets/img/Layer1.png", alt="")
-	.button__wrap
-		a(href="#",class="button__log flip") Авторизоваться
-	.cont-contactBtn
-		.cont-flip
-			.front
-				.welcome__img-wrap
-					img(src="/assets/img/avatar.jpg", class="welcome__avatar" alt="portfolio")
-				.welcome__text-name 
-					h2 #{name}
-					p  Личный сайт веб разработчика
-				.welcome__link
-					ul.icon__wrap-link
-						li.icon__wrap.icon__wrap-green
-							a(href="#")
-								+icon('vk')
-						li.icon__wrap.icon__wrap-green
-							a(href="#")
-								+icon('github') 
-						li.icon__wrap.icon__wrap-green
-							a(href="#")
-								+icon('in')  
-				
-				ul.welcome__navigation
-					li
-						a(href="/works.html") Мои работы
-					li
-						a(href="/about.html") Обо мне
-					li
-						a(href="/blog.html") Блог
-			.back
-				.welcome__title.block-dash
-					h2 Авторизуйтесь
-					a(href="#" class="flip close") X
-				form.form__wraper
-					div.form__field
-						span.form__icon
-						=""
-						input(type="text",placeholder="Логин")
-					div.form__field
-						span.form__icon
-						=""	
-						input(type="text",placeholder="Пароль")
-					div.form__wraper-check
-						input(type="checkbox") 
-						| Я человек
-						p Вы точно не робот?
-						div.form__radio
-							input(type="radio",name="radio",value="yes")
-							= "Да"
-							input(type="radio",name="radio",value="no", checked)
-							= "Не уверен"	
-				ul.welcome__navigation
-					li
-						a(href="#" class="flip")  На главную
-					li
-						a(href="#")  Войти
+		.button__wrap
+			a(href="#",class="button__log flip") Авторизоваться
+		.cont-contactBtn
+			.cont-flip
+				.front
+					.welcome__img-wrap
+						img(src="/assets/img/avatar.jpg", class="welcome__avatar" alt="portfolio")
+					.welcome__text-name 
+						h2 #{name}
+						p  Личный сайт веб разработчика
+					.welcome__link
+						ul.icon__wrap-link
+							li.icon__wrap.icon__wrap-green
+								a(href="https://vk.com/grey_ss",target="_blank")
+									+icon('vk')
+							li.icon__wrap.icon__wrap-green
+								a(href="https://github.com/AndroshchukSerhii",target="_blank")
+									+icon('github') 
+							li.icon__wrap.icon__wrap-green
+								a(href="https://ua.linkedin.com/in/сергей-андрощук-1b03b8125",target="_blank")
+									+icon('in')  
+					
+					ul.welcome__navigation
+						li
+							a(href="/works.html") Мои работы
+						li
+							a(href="/about.html") Обо мне
+						li
+							a(href="/blog.html") Блог
+				.back
+					.welcome__title.block-dash
+						h2 Авторизуйтесь
+						a(href="#" class="flip close") X
+					form.form__wraper
+						div.form__field
+							span.form__icon
+							=""
+							input(type="text",placeholder="Логин")
+						div.form__field
+							span.form__icon
+							=""	
+							input(type="text",placeholder="Пароль")
+						div.form__wraper-check
+							input(type="checkbox") 
+							| Я человек
+							p Вы точно не робот?
+							div.form__radio
+								input(type="radio",name="radio",value="yes")
+								= "Да"
+								input(type="radio",name="radio",value="no", checked)
+								= "Не уверен"	
+					ul.welcome__navigation
+						li
+							a(href="#" class="flip")  На главную
+						li
+							a(href="#")  Войти
 footer.weclome-footer
 	| © Андрощук Сергей | создано с любовью в LoftSchool | 2016

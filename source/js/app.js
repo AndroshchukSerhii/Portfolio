@@ -82,6 +82,58 @@ var blur = (function(){
     }
 }());
 
+var blogMenu = (function() {
+  var 
+    linkNav = document.querySelectorAll('[href^="#nav"]'),
+    V = 0.5, // скорость скрола при нажатии на меню
+    activeHeight =  200; // высота от верха экрана при которой срабатывает переключение
+  var 
+    stickySidebar = $('.blog__list').offset().top;
+
+  return {
+    set: function(){  
+      $(window).scroll(function() { 
+        console.log($(window).scrollTop())
+
+        if ($(window).scrollTop() + activeHeight > stickySidebar) {
+            $('.blog__list').addClass('blog__list-fix');
+
+        }
+        else {
+            $('.blog__list').removeClass('blog__list-fix');
+        }  
+      });
+
+      for (var i = 0; i < linkNav.length; i++) {
+        linkNav[i].onclick = function(){
+          var w = window.pageYOffset,
+              hash = this.href.replace(/[^#]*(.*)/, '$1'),
+              t = document.querySelector(hash).getBoundingClientRect().top,
+              start = null;
+          requestAnimationFrame(step);
+          function step(time) {
+            if (start === null) start = time;
+            var progress = time - start,
+                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+            window.scrollTo(0,r);
+            if (r != w + t) {requestAnimationFrame(step)} else {location.hash = hash}
+          }
+          return false;
+        }
+      }
+
+      window.addEventListener('scroll', function(e) {
+        var 
+          nav = document.querySelectorAll('section[id^="nav"]');
+
+        for (var i = 0; i < nav.length; i++) { 
+          document.querySelector('a[href="#' + nav[i].id + '"]').className=((1 >= nav[i].getBoundingClientRect().top-activeHeight && nav[i].getBoundingClientRect().top >= activeHeight-nav[i].offsetHeight) ? 'blog__list-item_active' : '');
+        }
+      }, false);
+    }
+  }
+}());
+
 var slider = (function() {
   //private
   var
@@ -766,6 +818,7 @@ var scrollPage = (function() {
   }
 }());
 
+
 $(document).ready(function(){
   $('.flip').click(function(){
     $('.cont-flip').toggleClass('flipped');
@@ -776,13 +829,14 @@ $(document).ready(function(){
   jQuery('.parallax-layer').parallax({
         mouseport: jQuery("#parallax")
     });
+
     if ($('.slider').length) {
       slider.init();   
     }
     if ($('#section').length) {
       scrollPage.set();
     }
-
+    
    $('#toggle').click(function() {
      $(this).toggleClass('active');
      $('#overlay').toggleClass('open');
@@ -810,8 +864,12 @@ $(document).ready(function(){
   if ($('.feadback').length) {
     blur.set();
   }
-
+  if ($('.blog__list').length) {
+    blogMenu.set();
+  }
 });
+
+
 $(document).resize(function(){
   if ($('.feadback').length) {
     blur.set();
